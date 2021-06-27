@@ -2,7 +2,8 @@ const { gql } = require('apollo-server');
 
 const query = gql`
 	type Query {
-		characterSheets: [CharacterSheet]
+		getCharacterSheets: [CharacterSheet]
+		getCharacterSheet(id: ID!): CharacterSheet
 	}
 
 `;
