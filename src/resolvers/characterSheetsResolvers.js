@@ -1,6 +1,7 @@
 const { CharacterSheet } = require('../models');
 const config = require('../../database/knexfile')
 const knex = require('knex')(config);
+
 const characterSheetsResolvers = {
 	Query: {
 		getCharacterSheets: async () => {
