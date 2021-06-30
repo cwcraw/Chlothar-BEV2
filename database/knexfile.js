@@ -1,5 +1,6 @@
 require('dotenv').config();
 config = require('../config')
+console.log(config.db.connection)
 module.exports = {
   client: process.env.CLIENT || 'pg',
   connection:  config.db.connection,
